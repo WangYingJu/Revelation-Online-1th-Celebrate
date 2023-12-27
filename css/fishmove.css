@@ -1,0 +1,58 @@
+#fish {
+  z-index: -1;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+}
+
+.fish-move {
+  -webkit-animation: fish-move 20s infinite;
+  -moz-animation: fish-move 20s infinite;
+  animation: fish-move 20s infinite;
+  width: 100%;
+}
+
+
+@keyframes fish-move {
+  0% {
+    opacity: 0;
+    transform: scale(1) translate3d(200px, 50px, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(100px, 0px, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(1) translate3d(50px, 50px, 0);
+  }
+}
+
+@media (min-width:767px) {
+  .fish-move {
+    width: 80%;
+  }
+
+  @keyframes fish-move {
+    0% {
+      opacity: 0;
+      transform: scale(1) translate3d(1000px, 50px, 0);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translate3d(800px, 0px, 0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(1) translate3d(600px, 50px, 0);
+    }
+  }
+}

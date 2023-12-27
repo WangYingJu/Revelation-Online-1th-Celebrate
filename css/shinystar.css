@@ -1,0 +1,120 @@
+.shinystar1 {
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  top: 15vw;
+  right: 26vw;
+  -webkit-animation: star-pulse 2s infinite;
+  -moz-animation: star-pulse 2s infinite;
+  animation: star-pulse 2s infinite;
+}
+.shinystar2 {
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  top: 20vw;
+  left: 26vw;
+  -webkit-animation: star-pulse 3s infinite;
+  -moz-animation: star-pulse 3s infinite;
+  animation: star-pulse 3s infinite;
+}
+.shinystar3 {
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  top: 60vw;
+  right: 30vw;
+  -webkit-animation: star-pulse 1.5s infinite;
+  -moz-animation: star-pulse 1.5s infinite;
+  animation: star-pulse 1.5s infinite;
+}
+.shinystar4 {
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  top: 65vw;
+  left: 20vw;
+  -webkit-animation: star-pulse 3s infinite;
+  -moz-animation: star-pulse 3s infinite;
+  animation: star-pulse 3s infinite;
+}
+.shinystar5 {
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  top: 170vw;
+  right: 10vw;
+  -webkit-animation: star-pulse 3s infinite;
+  -moz-animation: star-pulse 3s infinite;
+  animation: star-pulse 3s infinite;
+}
+.shinystar6 {
+  position: absolute;
+  z-index: 5;
+  width: 5vw;
+  top: 205vw;
+  left: 20vw;
+  -webkit-animation: star-pulse 2s infinite;
+  -moz-animation: star-pulse 2s infinite;
+  animation: star-pulse 2s infinite;
+}
+
+
+/*閃動態*/
+@-webkit-keyframes star-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+@keyframes star-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.7;
+  }
+}
+
+.star-pulse {
+  -webkit-animation-name: star-pulse;
+  animation-name: star-pulse;
+}
+
+/*閃動態 end*/
+
+@media (max-width:1199px) {
+  .shinystar1, .shinystar2, .shinystar3, .shinystar4, .shinystar5, .shinystar6 {
+    width: 10vw;
+  }
+}
+
+@media (max-width:767px) {
+  .shinystar1, .shinystar2, .shinystar3, .shinystar4, .shinystar5, .shinystar6 {
+    width: 20vw;
+  }
+}

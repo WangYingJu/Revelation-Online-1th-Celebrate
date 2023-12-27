@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+/*--↓app_info↓--*/
+.footer_up {
+	width: 100%;
+	height: 19px;
+	background: url(..//images/footer_up.jpg);
+	background-size: cover;
+}
+
+section.info::before {
+	margin-top: -77px;
+}
+
+.info {
+	color: #e1d7c9;
+	padding: 60px 0;
+	background-image: url(..//images/os_bg.jpg);
+	background-size: cover;
+	text-align: center;
+}
+
+.info::after {
+	display: none;
+}
+
+.info>.inner-wrapper {
+	margin-bottom: 50px;
+}
+
+.game-icon,
+.game-info {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.game-icon {
+	width: 144px;
+}
+
+.game-info {
+	text-align: left;
+	margin-left: 20px;
+}
+
+.game-info tr td {
+	vertical-align: top;
+	line-height: 1.5;
+	font-size: 14px;
+	padding: 5px;
+}
+
+.info>ul {
+	display: inline-block;
+	padding: 0;
+	text-align: center;
+	width: 99%;
+	font-size: 0;
+	color: #f2e9be;
+}
+
+.info>ul>li {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 400;
+	padding: 0 40px;
+	border-right: 2px solid #f2e9be;
+}
+
+.info>ul>li:nth-child(4) {
+	border-right: 0;
+}
+
+.info>ul>li:hover {
+	color: #ffffff;
+}
+
+@media (max-width:768px) {
+	section.info::before {
+		margin-top: -9%;
+	}
+
+	.info {
+		background-image: url(..//images/os_bg_sp.jpg);
+		background-size: cover;
+		padding: 8vw 0;
+	}
+
+	.info>.inner-wrapper {
+		margin-bottom: 6vw;
+		margin-top: 4vw;
+	}
+
+	.game-icon,
+	.game-info {
+		display: block;
+	}
+
+	.game-icon {
+		margin: 0 auto 4vw auto;
+		width: 30%;
+	}
+
+	.game-info {
+		width: 80vw;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.game-info tr td {
+		font-size: 2.5vw;
+		padding: 0;
+	}
+
+	.game-info tr td:nth-child(1) {
+		width: 17vw;
+	}
+
+	.info>ul>li {
+		font-size: 3vw;
+		padding: 0 2vw;
+	}
+}
+
+@media (max-width:320px) {
+	.game-info tr td:nth-child(1) {
+		width: 22vw;
+	}
+}
+
+/*--↑app_info↑--*/
+
+
+/*--↓footer↓--*/
+footer {
+	padding: 85px 0 140px 0;
+	width: 100%;
+	text-align: center;
+	background-image: url("..//images/footer_bg.jpg");
+	color: #e1d7c9;
+}
+
+footer>div>div,
+footer>div>div>div {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.footer-left {
+	font-size: 14px;
+}
+
+.all-right {
+	margin-left: 5px;
+}
+
+.logos {
+	margin: 0 20px;
+}
+
+.footer-right {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+.classTxt {
+	margin-left: 10px;
+}
+
+@media (max-width:1200px) {
+	.footer-right {
+		margin-top: 20px;
+	}
+}
+
+@media (max-width:768px) {
+	footer {
+		/* padding: 40px 0 80px 0; */
+	}
+
+	.footer-left {
+		/* width: 90%; */
+		text-align: center;
+		margin-bottom: 15px;
+		font-size: 2.4vw;
+	}
+
+	.logos {
+		display: inline-block;
+		margin-bottom: 20px;
+	}
+
+	.logos>img {
+		width: 100%;
+	}
+
+	.footer-right {
+		width: 80%;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.classLevel>img {
+		width: 30px;
+	}
+
+	.classTxt {
+		width: calc(100% - 80px);
+		box-sizing: border-box;
+		text-align: justify;
+	}
+
+	.classTxt>br {
+		display: block;
+	}
+}
+
+/*--↑footer↑--*/
+
+
+/*--↓fixed-link↓--*/
+.fixed-link {
+	position: fixed;
+	width: 100%;
+	height: auto;
+	padding: 15px 0;
+	bottom: -200px;
+	left: 0;
+	text-align: center;
+	background: url("..//images/fix_bg.jpg");
+	background-size: cover;
+	z-index: 90;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.fixed-link.scroll {
+	bottom: 0px;
+	opacity: 0.95;
+}
+
+.fixed-link a {
+	display: inline-block;
+	margin-right: 70px;
+	vertical-align: middle;
+}
+
+.fixed-link a:nth-child(6) {
+	margin-right: 0px;
+}
+
+.goTop {
+	position: fixed;
+	width: 3.6%;
+	height: auto;
+	bottom: 60px;
+	right: 34px;
+	background-color: rgba(0, 255, 255, 0);
+	display: none;
+	z-index: 99;
+}
+
+@media (max-width:1440px) {
+	.fixed-link {
+		height: auto;
+		line-height: 0;
+		background-color: #132834;
+	}
+
+	.fixed-link a {
+		width: 13%;
+		margin-right: 2%;
+		vertical-align: middle;
+	}
+
+	.fixed-link a img {
+		width: 100%;
+	}
+
+	.goTop {
+		width: 4.6%;
+		position: fixed;
+		height: auto;
+		bottom: 100px;
+		right: 34px;
+		display: none;
+		z-index: 99;
+	}
+}
+
+@media (max-width:1024px) {
+	.goTop {
+		position: fixed;
+		width: 7.6%;
+		height: auto;
+		bottom: 101px;
+		right: 12px;
+		display: none;
+		z-index: 99;
+	}
+}
+
+@media (max-width:768px) {
+	.fixed-link {
+		position: fixed;
+		width: 100%;
+		height: auto;
+		padding: 2% 0;
+	}
+
+	.fixed-link.scroll {
+		opacity: 1.0;
+	}
+
+	.fixed-link a {
+		width: 14%;
+		display: inline-block;
+		margin-right: 2%;
+		display: inline-block;
+	}
+
+	.fixed-link a:nth-child(3) {
+		margin-right: 0px;
+	}
+
+	.fixed-link a:nth-child(4),
+	.fixed-link a:nth-child(5),
+	.fixed-link a:nth-child(6) {
+		margin-top: 0%;
+		margin-right: 2%;
+		margin-left: 0;
+	}
+
+	/*↓↓↓ 拿掉紅利商城後的調整 ↓↓↓*/
+	.fixed-link a:nth-child(4) {
+		margin-left: 2%;
+	}
+
+	.fixed-link a:nth-child(4),
+	.fixed-link a:nth-child(6) {
+		margin-right: 2%;
+	}
+
+	/*↑↑↑ 拿掉紅利商城後的調整_end ↑↑↑*/
+
+	.goTop {
+		position: fixed;
+		width: 7%;
+		height: auto;
+		bottom: 87px;
+		right: 10px;
+		display: none;
+		z-index: 99;
+	}
+}
+
+@media (max-width:414px) {
+	.fixed-link {
+		position: fixed;
+		width: 100%;
+		height: auto;
+		padding: 5% 0;
+	}
+
+	.fixed-link a {
+		width: 28%;
+	}
+
+	.goTop {
+		width: 10%;
+		bottom: 11%;
+		right: 2%;
+	}
+}
+
+/*--↑fixed-link↑--*/
